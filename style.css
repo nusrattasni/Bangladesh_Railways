@@ -1,0 +1,321 @@
+body{
+    background-image:url(bg.jpg);
+    background-size: cover;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#homeSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px); /* Adjust to account for navbar + header */
+}
+
+
+/* Header Title */
+header h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.navbar-container {
+    background-color: black;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Login/Signup Buttons */
+.btn {
+    
+    
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.auth-buttons .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Welcome Banner (Glassmorphism) */
+.welcome-banner {
+    margin: 80px auto;
+    padding: 40px;
+    max-width: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-banner h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: rgb(20, 19, 19);
+}
+
+.welcome-banner p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #e0e0e0;
+    background: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#trainSearchSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 150px); /* Adjust if header + navbar change */
+  padding: 20px;
+}
+
+.html, body {
+    height: 100%;
+}
+
+#trainSearchSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px); /* adjust based on header/navbar height */
+    padding: 20px;
+}
+
+.train-search-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.train-search-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    max-width: 400px;
+    width: 100%;
+}
+.train-search-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.train-search-box label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.train-search-box input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+.reservation-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 150px);
+  padding: 20px;
+}
+
+.reservation-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  width: 100%;
+  margin-top: 80px; /* 👈 This pushes it down */
+}
+
+
+.reservation-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reservation-box input,
+.reservation-box select {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+.profile-center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+  height: calc(100vh - 150px);
+}
+
+.profile-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.profile-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-card p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.profile-card .btn {
+  display: block;
+  margin: 20px auto 0;
+  background-color: #007bff;
+  padding: 10px 16px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.profile-card .btn:hover {
+  background-color: #0056b3;
+}
+.profile-center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+  height: calc(100vh - 150px);
+}
+
+.profile-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 400px;
+}
+
+.profile-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-card label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.profile-card input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 0px;
+}
+
+.profile-card .btn {
+  width: 100%;
+  background-color: #007bff;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-card .btn:hover {
+  background-color: #0056b3;
+}
+.welcome-banner {
+  margin-top: 0px; /* reduce this value as needed */
+  background-color: rgba(85, 82, 82, 0.6);
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+}
+
+.contact-info p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
